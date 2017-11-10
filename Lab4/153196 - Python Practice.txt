@@ -1,0 +1,106 @@
+Python 3.6.1 (default, Dec 2015, 13:05:11)
+[GCC 4.8.2] on linux
+   name = input('Enter your name: ')
+Enter your name:  Ahsan Javed
+   age = input('Enter your age: ')
+Enter your age:  21
+   birthyear = 2017 - age
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+   birthyear = 2017 - int(age)
+   year = 100 - int(age)
+   print (year)
+79
+   year = birthyear + year
+   print('You will turn 100 years old on '+year)
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+TypeError: must be str, not int
+   print('You will turn 100 years old on '+str(year))
+You will turn 100 years old on 2075
+   x=10
+   type(x)
+=> <class 'int'>
+   x=1.5
+   type(x)
+=> <class 'float'>
+   b1 = True
+   b2 = False
+   type(b1)
+=> <class 'bool'>
+   x=1.0-1.0j
+   type(x)
+=> <class 'complex'>
+   print(x)
+(1-1j)
+   print(x.real, x.imag)
+1.0 -1.0
+   print(dir(types))
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+NameError: name 'types' is not defined
+   print(dir(type))
+['__abstractmethods__', '__base__', '__bases__', '__basicsize__', '__call__', '__class__', '__delattr__', '__dict__', '__dictoffset__', '__dir__', '__doc__', '__eq__', '__flags__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__instancecheck__', '__itemsize__', '__le__', '__lt__', '__module__', '__mro__', '__name__', '__ne__', '__new__', '__prepare__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasscheck__', '__subclasses__', '__subclasshook__', '__text_signature__', '__weakrefoffset__', 'mro']
+   print(dir(types))
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+NameError: name 'types' is not defined
+   type(x) is float
+=> False
+   type(x) is complex
+=> True
+   isinstance(x, float)
+=> False
+   isinstance(x, complex)
+=> True
+   x=1.5
+   print(x, type(x))
+1.5 <class 'float'>
+   x = int(x)
+   print(x)
+1
+   Z=complex(x)
+   print(z)
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+NameError: name 'z' is not defined
+   x=float(z)
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+NameError: name 'z' is not defined
+   Z=complex(x)
+   x=float(Z)
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+TypeError: can't convert complex to float
+   x=print(z)
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+NameError: name 'z' is not defined
+   x=print(Z)
+(1+0j)
+   x = float(Z)
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+TypeError: can't convert complex to float
+   y = bool(z.real)
+Traceback (most recent call last):
+  File "python", line 1, in <module>
+NameError: name 'z' is not defined
+   y = bool(Z.real)
+   print(Z.real, "->", y, type(y))
+1.0 -> True <class 'bool'>
+   print(Z.imag, "->", y, type(y))
+0.0 -> True <class 'bool'>
+   y = bool(Z.imag)
+   print(Z.imag, "->", y, type(y))
+0.0 -> False <class 'bool'>
+   1+2, 1-2, 1*2, 1/2
+=> (3, -1, 2, 0.5)
+   2**2
+=> 4
+   import types
+   print(dir(types))
+['AsyncGeneratorType', 'BuiltinFunctionType', 'BuiltinMethodType', 'CodeType', 'CoroutineType', 'DynamicClassAttribute', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'LambdaType', 'MappingProxyType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'SimpleNamespace', 'TracebackType', '_GeneratorWrapper', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_ag', '_calculate_meta', '_collections_abc', '_functools', 'coroutine', 'new_class', 'prepare_class']
+   
