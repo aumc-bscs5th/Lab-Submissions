@@ -1,0 +1,299 @@
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x=1
+>>> type(x)
+<class 'int'>
+>>> x=1.0
+>>> type(x)
+<class 'float'>
+>>> b1 =True
+>>> b2 =False
+>>> type(b1)
+<class 'bool'>
+>>> type(b2)
+<class 'bool'>
+>>> x=1.0-1.0j
+>>> type(x)
+<class 'complex'>
+>>> (1-1j)
+(1-1j)
+>>> print(x)
+(1-1j)
+>>> print(x.real,x.image)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'image'
+>>> (1-1j)
+(1-1j)
+>>> print(x.real,x.imag)
+1.0 -1.0
+>>> import types
+>>> print(dir(types))
+['AsyncGeneratorType', 'BuiltinFunctionType', 'BuiltinMethodType', 'CodeType', 'CoroutineType', 'DynamicClassAttribute', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'LambdaType', 'MappingProxyType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'SimpleNamespace', 'TracebackType', '_GeneratorWrapper', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_ag', '_calculate_meta', '_collections_abc', '_functools', 'coroutine', 'new_class', 'prepare_class']
+>>> x=1.0
+>>> type(x) is float
+True
+>>> type(x) is int
+False
+>>> isinstance(x,float)
+True
+>>> x=1.5
+>>> print(x,type(x))
+1.5 <class 'float'>
+>>> z=complex(x)
+>>> print(z,type(z))
+(1.5+0j) <class 'complex'>
+>>> x=float(z)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't convert complex to float
+>>> y=bool(z.real)
+>>> print(z.real,"->",y,type(Y))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Y' is not defined
+>>> 'SliceType', 'StringType', 'StringTypes', 'TracebackType', 'TupleType', 'TypeType', 'UnboundMethodType', 'UnicodeType', 'XRangeType', '__all__', '__builtins__', '__doc__', '__file__', '__name__', '__package__']
+  File "<stdin>", line 1
+    'SliceType', 'StringType', 'StringTypes', 'TracebackType', 'TupleType', 'TypeType', 'UnboundMethodType', 'UnicodeType', 'XRangeType', '__all__', '__builtins__', '__doc__', '__file__', '__name__', '__package__']
+                                                                                                                                                                                                                     ^
+SyntaxError: invalid syntax
+>>> In [26]:
+  File "<stdin>", line 1
+    In [26]:
+           ^
+SyntaxError: invalid syntax
+>>> x = 1.0
+>>> # check if the variable x is a float
+... type(x) is float
+True
+>>> Out[26]:
+  File "<stdin>", line 1
+    Out[26]:
+           ^
+SyntaxError: invalid syntax
+>>> True
+True
+>>> In [27]:
+  File "<stdin>", line 1
+    In [27]:
+           ^
+SyntaxError: invalid syntax
+>>> # check if the variable x is an int
+... type(x) is int
+False
+>>> Out[27]:
+  File "<stdin>", line 1
+    Out[27]:
+           ^
+SyntaxError: invalid syntax
+>>> False We can also use the isinstance method for testing types of variables:
+  File "<stdin>", line 1
+    False We can also use the isinstance method for testing types of variables:
+           ^
+SyntaxError: invalid syntax
+>>> In [28]:
+  File "<stdin>", line 1
+    In [28]:
+           ^
+SyntaxError: invalid syntax
+>>> isinstance(x, float)
+True
+>>> Out[28]:
+  File "<stdin>", line 1
+    Out[28]:
+           ^
+SyntaxError: invalid syntax
+>>> True
+True
+>>> Type casting
+  File "<stdin>", line 1
+    Type casting
+               ^
+SyntaxError: invalid syntax
+>>> In [29]:
+  File "<stdin>", line 1
+    In [29]:
+           ^
+SyntaxError: invalid syntax
+>>> x = 1.5
+>>> print(x, type(x))
+1.5 <class 'float'>
+>>> (1.5, <type 'float'>)
+  File "<stdin>", line 1
+    (1.5, <type 'float'>)
+          ^
+SyntaxError: invalid syntax
+>>> In [30]:
+  File "<stdin>", line 1
+    In [30]:
+           ^
+SyntaxError: invalid syntax
+>>> x = int(x)
+>>> print(x, type(x))
+1 <class 'int'>
+>>> (1, <type 'int'>)
+  File "<stdin>", line 1
+    (1, <type 'int'>)
+        ^
+SyntaxError: invalid syntax
+>>> In [31]:
+  File "<stdin>", line 1
+    In [31]:
+           ^
+SyntaxError: invalid syntax
+>>> z = complex(x)
+>>> print(z, type(z))
+(1+0j) <class 'complex'>
+>>> ((1+0j), <type 'complex'>) In [32]:
+  File "<stdin>", line 1
+    ((1+0j), <type 'complex'>) In [32]:
+             ^
+SyntaxError: invalid syntax
+>>> x = float(z)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't convert complex to float
+>>> ---------------------------------------------------------------------------
+  File "<stdin>", line 1
+    ---------------------------------------------------------------------------
+                                                                              ^
+SyntaxError: invalid syntax
+>>> TypeError Traceback (most recent call last)
+  File "<stdin>", line 1
+    TypeError Traceback (most recent call last)
+                      ^
+SyntaxError: invalid syntax
+>>> <ipython-input-32-e719cc7b3e96> in <module>()
+  File "<stdin>", line 1
+    <ipython-input-32-e719cc7b3e96> in <module>()
+    ^
+SyntaxError: invalid syntax
+>>> ----> 1 x = float(z)
+  File "<stdin>", line 1
+    ----> 1 x = float(z)
+        ^
+SyntaxError: invalid syntax
+>>> TypeError: can't convert complex to float Complex variables cannot be cast to floats or integers. We need to use z.real or z.imag to extract the part of the complex number we want: In [33]:
+  File "<stdin>", line 1
+    TypeError: can't convert complex to float Complex variables cannot be cast to floats or integers. We need to use z.real or z.imag to extract the part of the complex number we want: In [33]:
+                                                                                                                                                                                                ^
+SyntaxError: EOL while scanning string literal
+>>> y = bool(z.real)
+>>> print(z.real,"->",y,type(y))
+1.0 -> True <class 'bool'>
+>>> y=bool(z.imag)
+>>> print(z.imzg,"->",y,type(y))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'imzg'
+>>> print(z.imag,"->",y,type(y))
+0.0 -> False <class 'bool'>
+>>> 1+2
+KeyboardInterrupt
+>>>
+KeyboardInterrupt
+>>>
+KeyboardInterrupt
+>>>
+KeyboardInterrupt
+>>> 1+2,1-2,1*2,1/2
+(3, -1, 2, 0.5)
+>>> 1.0+2.0,1.0-2.0,1.0*2.0,1.0/2.0
+(3.0, -1.0, 2.0, 0.5)
+>>> 3.0//2.0
+1.0
+>>> 3/2
+1.5
+>>> 3//2
+1
+>>> 2**2
+4
+>>> True and False
+False
+>>> not False
+True
+>>> True or False
+True
+>>> 2>1,2<1
+(True, False)
+>>> 2>2,2<2
+(False, False)
+>>> 2>=2,2<=2
+(True, True)
+>>> [1,2]==[1,2]
+True
+>>> l1 = l2 =[1,2]
+>>> l1 is l2
+True
+>>> name =input("what is your name? ")
+what is your name? \
+>>> name =input("what is your name? ")
+what is your name? sohail
+>>> print (name)
+sohail
+>>> city =input("what city do u live? ")
+what city do u live? multan
+>>> state =input("what is your state? ")
+what is your state? pakistan
+>>> print(name,"from",city,state)
+sohail from multan pakistan
+>>>
+KeyboardInterrupt
+>>> age =int(input( "pardon my rudeness, but how old ar u? "))
+pardon my rudeness, but how old ar u? 19
+>>> print("wow! you look like u could be",int (age-(0.15*age)),"!!"
+...
+KeyboardInterrupt
+>>> print("wow! you look like u could be",int (age-(0.15*age)),"!!")
+wow! you look like u could be 16 !!
+>>> if 9>5
+  File "<stdin>", line 1
+    if 9>5
+         ^
+SyntaxError: invalid syntax
+>>> if 9>5
+  File "<stdin>", line 1
+    if 9>5
+         ^
+SyntaxError: invalid syntax
+>>> if 9>5:
+...     print("9 greator than 5")
+...     if 9<5:
+...           print("9 smaller than 5")
+...
+9 greator than 5
+>>> if not(10==4) and 9>5:\
+...     print("yes, basic math competency achieved")
+...
+yes, basic math competency achieved
+>>> lightcolour=input("what colour is yhe traffic light")
+what colour is yhe traffic lightgreen
+>>> lightcolour=lightcolour.lower()
+>>> print(lightcolour)
+green
+>>> if lightcolour == "red":
+...     print("stop")
+... elif lightcolour == "yellow":
+...     print("get ready")
+... elif lightcolour == "green":
+...     print("go")
+... else:
+...     print("what country r u in?")
+...
+go
+>>>
+>>> name=input("what is your name")
+what is your namesohail
+>>> age=input("what is your age")
+what is your age19
+>>> age=int(age)
+>>> print("age")
+age
+>>> print(age)
+19
+>>> year=2017-age
+>>> print(year)
+1998
+>>> print(name,"you will be 100 in",int(100+year))
+sohail you will be 100 in 2098
+>>>
