@@ -1,0 +1,288 @@
+   in[19]
+     ^
+SyntaxError: invalid syntax
+>>> #integers
+... in[19]
+  File "<stdin>", line 2
+    in[19]
+     ^
+SyntaxError: invalid syntax
+>>> x=1
+>>> type(x)
+<class 'int'>
+>>> xfloat
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'xfloat' is not defined
+>>> x=10
+>>> type(x)
+<class 'int'>
+>>> b1=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> b1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'b1' is not defined
+>>> float
+<class 'float'>
+>>> b1=tru
+>>> b1=True
+>>> b2=False
+>>> type(b1)
+<class 'bool'>
+>>> x=1..0-1.0j
+  File "<stdin>", line 1
+    x=1..0-1.0j
+>>> x>>> 
+  File "<stdin>", line 1
+    x>>> 
+       ^
+SyntaxError: invalid syntax
+>>> x=1.0-1.0j
+>>> type(x)
+<class 'complex'>
+>>> print(x)
+(1-1j)
+>>> import type
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'type'
+>>> print(dir(type))
+>>> x=1
+>>> type(x)
+<class 'int'>
+>>> xfloat
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'xfloat' is not defined
+>>> x=10
+>>> type(x)
+<class 'int'>
+>>> b1=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> b1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'b1' is not defined
+>>> float
+<class 'float'>
+>>> b1=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> b1=True
+>>> b2=False
+>>> type(b1)
+<class 'bool'>
+>>> x=1..0-1.0j
+  File "<stdin>", line 1
+    x=1..0-1.0j
+         ^
+SyntaxError: invalid syntax
+>>> x = 1.0 - 1.0j
+>>> 
+>>> >>> 
+  File "<stdin>", line 1
+    >>> 
+     ^
+SyntaxError: invalid syntax
+>>>  
+... 
+>>> 
+>>> x>>> 
+  File "<stdin>", line 1
+    x>>> 
+       ^
+SyntaxError: invalid syntax
+>>> x=1.0-1.0j
+>>> type(x)
+<class 'complex'>
+>>> print(x)
+(1-1j)
+>>> import type
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'type'
+>>> print(dir(type))
+['__abstractmethods__', '__base__', '__bases__', '__basicsize__', '__call__', '__class__', '__delattr__', '__dict__', '__dictoffset__', '__dir__', '__doc__', '__eq__', '__flags__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__instancecheck__', '__itemsize__', '__le__', '__lt__', '__module__', '__mro__', '__name__', '__ne__', '__new__', '__prepare__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasscheck__', '__subclasses__', '__subclasshook__', '__text_signature__', '__weakrefoffset__', 'mro']
+>>> x=1.0
+>>> type(x)
+<class 'float'>
+sicsize__', '__call__', '__class__', '__delattr__', '_
+_dict__', '__dictoffset__', '__dir__', '__doc__', '__e
+q__', '__flags__', '__format__', '__ge__', '__getattri
+bute__', '__gt__', '__hash__', '__init__', '__init_sub
+class__', '__instancecheck__', '__itemsize__', '__le__
+', '__lt__', '__module__', '__mro__', '__name__', '__n
+e__', '__new__', '__prepare__', '__qualname__', '__red
+uce__', '__reduce_ex__', '__repr__', '__setattr__', '_
+_sizeof__', '__str__', '__subclasscheck__', '__subclas
+ses__', '__subclasshook__', '__text_signature__', '__w
+eakrefoffset__', 'mro']
+>>> x=1.0
+>>> type(x)
+<class 'float'>
+>>> type(x)
+<class 'float'>
+>>> type(x)is int
+False
+>>> type(x)
+<class 'float'>
+>>> type(x)is int
+False
+  File "<stdin>", line 1, in <module>
+>>> isinstance(x,float)
+True
+>>> x=1.5
+>>> print(x,type(x))
+1.5 <class 'float'>
+>>>  x=int(x)
+  File "<stdin>", line 1
+    x=int(x)
+    ^
+IndentationError: unexpected indent
+>>> x=int(x)
+>>> print(x,type(x))
+1 <class 'int'>
+>>> x=complex(x)
+>>> print(z,type(z))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'z' is not defined
+>>>  z=f
+x = 1.5
+z = complex(x)
+
+x = float(z)
+z = complex(x)
+print(z, type(z))
+
+x = float(z)
+
+y = bool(z.real)
+print(z.real, " -> ", y, type(y))
+y = bool(z.imag)
+print(z.imag, " -> ", y, type(y))
+1 + 2, 1 - 2, 1 * 2, 1 / 2
+TypeError                                 Traceback (most recent call last)
+<ipython-input-8-0a90ad42efb1> in <module>()
+      2 z = complex(x)
+      3 
+----> 4 x = float(z)
+      5 z = complex(x)
+      6 print(z, type(z))
+
+TypeError: can't convert complex to float
+
+1 + 2, 1 - 2, 1 * 2, 1 / 2
+(3, -1, 2, 0.5)
+(3, -1, 2, 0)
+(3, -1, 2, 0)
+(3, -1, 2, 0)
+In [11]:
+
+1.0 + 2.0, 1.0 - 2.0, 1.0 * 2.0, 1.0 / 2.0
+1.0 + 2.0, 1.0 - 2.0, 1.0 * 2.0, 1.0 / 2.0
+Out[11]:
+(3.0, -1.0, 2.0, 0.5)
+In [12]:
+
+(3.0, -1.0, 2.0, 0.5)
+Out[12]:
+(3.0, -1.0, 2.0, 0.5)
+In [13]:
+
+3.0 // 2.0
+Out[13]:
+1.0
+In [14]:
+
+2 ** 2
+Out[14]:
+4
+In [15]:
+
+True and False
+Out[15]:
+False
+In [16]:
+
+not False
+Out[16]:
+True
+In [17]:
+
+True
+Out[17]:
+True
+In [18]:
+
+True or False
+Out[18]:
+True
+In [19]:
+
+True
+?
+Out[19]:
+True
+In [20]:
+
+2 > 1, 2 < 1
+Out[20]:
+(True, False)
+In [21]:
+
+(True, False)
+Out[21]:
+(True, False)
+In [22]:
+
+2 > 2, 2 < 2
+?
+Out[22]:
+(False, False)
+In [23]:
+
+(False, False)
+Out[23]:
+(False, False)
+In [24]:
+
+2 >= 2, 2 <= 2
+Out[24]:
+(True, True)
+In [25]:
+
+(True, True)
+Out[25]:
+(True, True)
+In [26]:
+
+[1,2] == [1,2]
+Out[26]:
+True
+In [27]:
+
+l1 = l2 = [1,2]
+In [34]:
+
+name = raw_input("What is your name? ")
+city = raw_input("What city do you live in? ")
+state = raw_input("What state is that in? ")
+print ()"Hello there! It is so great to meet you,"
+# One way to do this is to print strings on separate lines
+print (Mueed)
+#print "from"
+print (Multan)
+print (Punjab)
+print name, "from", city, state
+  File "<ipython-input-34-8a691b2c5bc0>", line 4
+    print ()"Hello there! It is so great to meet you,"
+                                                     ^
+SyntaxError: invalid syntax
+
