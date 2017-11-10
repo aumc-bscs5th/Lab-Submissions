@@ -1,0 +1,294 @@
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = 1
+>>> type(x)
+<class 'int'>
+>>> x = 1.0
+>>> type(x)
+<class 'float'>
+>>> in [21]:
+  File "<stdin>", line 1
+    in [21]:
+     ^
+SyntaxError: invalid syntax
+>>> In [21]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'In' is not defined
+>>> b1 = True
+>>>  b2 = False
+  File "<stdin>", line 1
+    b2 = False
+    ^
+IndentationError: unexpected indent
+>>> b1 = True
+>>> b2 = False
+>>> type (b1)
+<class 'bool'>
+>>> x = 1.0 - 1.oj
+  File "<stdin>", line 1
+    x = 1.0 - 1.oj
+                 ^
+SyntaxError: invalid syntax
+>>> x = 1.0i - 1.0j
+  File "<stdin>", line 1
+    x = 1.0i - 1.0j
+           ^
+SyntaxError: invalid syntax
+>>> x = 1.0 - 1.0j
+>>> type(x)
+<class 'complex'>
+>>> print(x)
+(1-1j)
+>>> print(x.real,x.imag)
+1.0 -1.0
+>>> tea.say(context, "This is a title", "Thanks for using this action!")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tea' is not defined
+>>> import types
+>>> print(dir(Boolean Type))
+  File "<stdin>", line 1
+    print(dir(Boolean Type))
+                         ^
+SyntaxError: invalid syntax
+>>> print(dir(types))
+['AsyncGeneratorType', 'BuiltinFunctionType', 'BuiltinMethodType', 'CodeType', 'CoroutineType', 'DynamicClassAttribute', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'LambdaType', 'MappingProxyType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'SimpleNamespace', 'TracebackType', '_GeneratorWrapper', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_ag', '_calculate_meta', '_collections_abc', '_functools', 'coroutine', 'new_class', 'prepare_class']
+>>> x = 1.0
+>>> type(x) is float
+True
+>>> type(x) is int
+False
+>>> isintance(x,float)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'isintance' is not defined
+>>> isinstance(x,float)
+True
+>>> x = 1.5
+>>> print(x, type(x))
+1.5 <class 'float'>
+>>> x = int(x)
+>>> print(x,type(x))
+1 <class 'int'>
+>>> z=complete(x)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'complete' is not defined
+>>> z=complete(x)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'complete' is not defined
+>>> z=complex(x)
+>>> print(z,type(z))
+(1+0j) <class 'complex'>
+>>> y = bool(z.real)
+>>> print(z.real, "->",y,type(y))
+1.0 -> True <class 'bool'>
+>>> 1+2,1-2,1*2,1/2
+(3, -1, 2, 0.5)
+>>> 1.0+2.0,1.0/2.0
+(3.0, 0.5)
+>>> 3.0//2/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: float division by zero
+>>> 3.0//2.0
+1.0
+>>> 2 ** 2
+4
+>>> True and False
+False
+>>> not false
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'false' is not defined
+>>> not False
+True
+>>> True or False
+True
+>>> 2>1,2<1
+(True, False)
+>>> 2>2,2<2
+(False, False)
+>>> 2>=2, 2<= 2
+(True, True)
+>>> [1,2] == [1,2]
+True
+>>>
+KeyboardInterrupt
+>>>
+>>> l1 = l2 = [1,2]
+>>> l1 is l2
+True
+>>> name =ali("what is your name?")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ali' is not defined
+>>> name =input("what is your name?")
+what is your name?ali
+>>> city = city("What city do you live in? ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'city' is not defined
+>>> city = input("What city do you live in? ")
+What city do you live in? lahore
+>>> state = input("What state is that in? ")
+What state is that in? pakistan
+>>> print "Hello there! It is so great to meet you,"
+  File "<stdin>", line 1
+    print "Hello there! It is so great to meet you,"
+                                                   ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello there! It is so great to meet you,")?
+>>> print("Hello there! It is so great to meet you,")?
+  File "<stdin>", line 1
+    print("Hello there! It is so great to meet you,")?
+                                                     ^
+SyntaxError: invalid syntax
+>>> print name
+  File "<stdin>", line 1
+    print name
+             ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(name)?
+>>> print (name)
+ali
+>>> print (from)
+  File "<stdin>", line 1
+    print (from)
+              ^
+SyntaxError: invalid syntax
+>>> print ("from")
+from
+>>> print(city)
+lahore
+>>> print(state)
+pakistan
+>>> print name, "from", city, state
+  File "<stdin>", line 1
+    print name, "from", city, state
+             ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(name, "from", city, state)?
+>>>  print (name, "from", city, state)?
+  File "<stdin>", line 1
+    print (name, "from", city, state)?
+    ^
+IndentationError: unexpected indent
+>>>  print(name, "from", city, state)?
+  File "<stdin>", line 1
+    print(name, "from", city, state)?
+    ^
+IndentationError: unexpected indent
+>>> name
+'ali'
+>>> city
+'lahore'
+>>> state
+'pakistan'
+>>> print name
+  File "<stdin>", line 1
+    print name
+             ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(name)?
+>>> print(name)
+ali
+>>> print(name,city)
+ali lahore
+>>> print( name, "from", city)
+ali from lahore
+>>> print( name, "from", city, state)
+ali from lahore pakistan
+>>> age = raw_input("Pardon my rudeness, but how old are you? ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'raw_input' is not defined
+>>> age =input("Pardon my rudeness, but how old are you? ")
+Pardon my rudeness, but how old are you? 21
+>>> print "Wow! You look like you could be", age - (0.15*age), "!!"
+  File "<stdin>", line 1
+    print "Wow! You look like you could be", age - (0.15*age), "!!"
+                                          ^
+SyntaxError: invalid syntax
+>>> print("Wow! You look like you could be", age - (0.15*age), "!!")?
+  File "<stdin>", line 1
+    print("Wow! You look like you could be", age - (0.15*age), "!!")?
+                                                                    ^
+SyntaxError: invalid syntax
+>>> print("Wow! You look like you could be", age - (0.15*age), "!!")?
+  File "<stdin>", line 1
+    print("Wow! You look like you could be", age - (0.15*age), "!!")?
+                                                                    ^
+SyntaxError: invalid syntax
+>>> print("Wow! You look like you could be", int(age) - (0.15*int(age)), "!!")?
+  File "<stdin>", line 1
+    print("Wow! You look like you could be", int(age) - (0.15*int(age)), "!!")?
+                                                                              ^
+SyntaxError: invalid syntax
+>>> print("Wow! You look like you could be", int(age) - (0.15*int(age)), "!!")
+Wow! You look like you could be 17.85 !!
+>>> print(QUESTION SOLUTION HERE)
+  File "<stdin>", line 1
+    print(QUESTION SOLUTION HERE)
+                          ^
+SyntaxError: invalid syntax
+>>> print(QUESTION SOLUTION HERE)?
+  File "<stdin>", line 1
+    print(QUESTION SOLUTION HERE)?
+                          ^
+SyntaxError: invalid syntax
+>>> print (L)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'L' is not defined
+>>> L = QUESTION SOLUTION IS HERE
+  File "<stdin>", line 1
+    L = QUESTION SOLUTION IS HERE
+                        ^
+SyntaxError: invalid syntax
+>>> NAME =input("enter u r name : ")
+enter u r name : fahad ali khan
+>>> age  = input(enter u r age : ")
+  File "<stdin>", line 1
+    age  = input(enter u r age : ")
+                       ^
+SyntaxError: invalid syntax
+>>> age  = input(enter u r Age : ")
+  File "<stdin>", line 1
+    age  = input(enter u r Age : ")
+                       ^
+SyntaxError: invalid syntax
+>>> age = input(Enter Yopur Age : ")
+  File "<stdin>", line 1
+    age = input(Enter Yopur Age : ")
+                          ^
+SyntaxError: invalid syntax
+>>> age = input(Enter Your Age : ")
+  File "<stdin>", line 1
+    age = input(Enter Your Age : ")
+                         ^
+SyntaxError: invalid syntax
+>>> age = input("Enter Your Age : ")
+Enter Your Age : 21
+>>> yearToTurn100 = 2017 + (100 - int(age))
+>>> print ("year To Turn 100 years old in : ",year to turn100)
+  File "<stdin>", line 1
+    print ("year To Turn 100 years old in : ",year to turn100)
+                                                    ^
+SyntaxError: invalid syntax
+>>> print ("You will Turn 100 years old in : ",yearToTurn100))
+  File "<stdin>", line 1
+    print ("You will Turn 100 years old in : ",yearToTurn100))
+                                                             ^
+SyntaxError: invalid syntax
+>>> print("You will Turn 100 years old in : ",yearToTurn100)
+You will Turn 100 years old in :  2096
+>>>  print("ASSINGMENT DONE")
+  File "<stdin>", line 1
+    print("ASSINGMENT DONE")
+    ^
+IndentationError: unexpected indent
+>>>  print("ASSINGMENT DONE": )
+  File "<stdin>", line 1
+    print("ASSINGMENT DONE": )
+    ^
+IndentationError: unexpected indent
+>>>
