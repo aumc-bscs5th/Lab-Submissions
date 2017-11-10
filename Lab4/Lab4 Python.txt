@@ -1,0 +1,277 @@
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x=1
+>>> type (x)
+<class 'int'>
+>>> int
+<class 'int'>
+>>> x=1.0
+>>> type(x)
+<class 'float'>
+>>> b1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'b1' is not defined
+>>> b1=True
+>>> b2=False
+>>> type(b1)
+<class 'bool'>
+>>> type(b2)
+<class 'bool'>
+>>> x=1.0-1.0j
+>>> type(x)
+<class 'complex'>
+>>> print(x.real,x.imag)
+1.0 -1.0
+>>> x=1.0-2.0j
+>>> type(x)
+<class 'complex'>
+>>> print(x.real,x.imag)
+1.0 -2.0
+>>> print(dir(types))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'types' is not defined
+>>> import types
+>>> print(dir(types))
+['AsyncGeneratorType', 'BuiltinFunctionType', 'BuiltinMethodType', 'CodeType', 'CoroutineType', 'DynamicClassAttribute', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'LambdaType', 'MappingProxyType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'SimpleNamespace', 'TracebackType', '_GeneratorWrapper', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_ag', '_calculate_meta', '_collections_abc', '_functools', 'coroutine', 'new_class', 'prepare_class']
+>>> type(x)is float
+False
+>>> import types
+>>> print(dir(types))
+['AsyncGeneratorType', 'BuiltinFunctionType', 'BuiltinMethodType', 'CodeType', 'CoroutineType', 'DynamicClassAttribute', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'LambdaType', 'MappingProxyType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'SimpleNamespace', 'TracebackType', '_GeneratorWrapper', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_ag', '_calculate_meta', '_collections_abc', '_functools', 'coroutine', 'new_class', 'prepare_class']
+>>> import types
+>>> print(dir(bool))
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> import types
+>>> print(dir(int))
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> type(x)is float
+False
+>>> x=1.0
+>>> type(x)is float
+True
+>>> x=1
+>>> type(x)is float
+False
+>>> type(x)is int
+True
+>>> isinstance(x,float)
+False
+>>> x=5
+>>> isinstance(x,float)
+False
+>>> isinstance(x,int)
+True
+>>> x=1.5
+>>> print(x,type(x))
+1.5 <class 'float'>
+>>> x=5
+>>> print(x,type(x))
+5 <class 'int'>
+>>> x=1j
+>>> print(x,type(x))
+1j <class 'complex'>
+>>> 1x=float(z)
+  File "<stdin>", line 1
+    1x=float(z)
+     ^
+SyntaxError: invalid syntax
+>>> print z
+  File "<stdin>", line 1
+    print z
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(z)?
+>>> print ( z)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'z' is not defined
+>>> print(z)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'z' is not defined
+>>> print(x)
+1j
+>>> y= 1-3j
+>>> print (type(y))
+<class 'complex'>
+>>> y=bool(z.real)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'z' is not defined
+>>> z=y
+>>> y=bool(z.real)
+>>> print(z.real,"->",y,type(y))
+1.0 -> True <class 'bool'>
+>>> y=bool(z.imag)
+>>> print(z.imag,"->",y,type(y)_
+  File "<stdin>", line 1
+    print(z.imag,"->",y,type(y)_
+                               ^
+SyntaxError: invalid syntax
+>>> print(z.imag,"->",y,type(y)
+... print(z.imag,"->",y,type(y))
+  File "<stdin>", line 2
+    print(z.imag,"->",y,type(y))
+        ^
+SyntaxError: invalid syntax
+>>> print(z.imag,"->",y,type(y))
+-3.0 -> True <class 'bool'>
+>>> 1+2,1-2,1*2,1/2
+(3, -1, 2, 0.5)
+>>> 1+2,1-2,1*2,1//2
+(3, -1, 2, 0)
+>>> 1.0+2.0,1.0-2.0,1.0*2.0,1.0//2.0
+(3.0, -1.0, 2.0, 0.0)
+>>> 1.0+2.0,1.0-2.0,1.0*2.0,1.0/2.0
+(3.0, -1.0, 2.0, 0.5)
+>>> 3.0//2.0
+1.0
+>>> 2**2
+4
+>>> True and False
+False
+>>> not Flase
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Flase' is not defined
+>>> not False
+True
+>>> True
+True
+>>> True or False
+True
+>>> False
+False
+>>> True or False
+True
+>>> 2>1,2<1
+(True, False)
+>>> 2>2,2<2
+(False, False)
+>>> 2>=2,2<=2
+(True, True)
+>>> [1,2] ==[1,2]
+True
+>>> |1 is |2
+  File "<stdin>", line 1
+    |1 is |2
+    ^
+SyntaxError: invalid syntax
+>>> |1 =|2 =[1,2]
+  File "<stdin>", line 1
+    |1 =|2 =[1,2]
+    ^
+SyntaxError: invalid syntax
+>>> |1 is |2
+  File "<stdin>", line 1
+    |1 is |2
+    ^
+SyntaxError: invalid syntax
+>>> l1 = l2 = [1,2]
+>>> l1 is l2
+True
+>>> name=input("What is Your Name?")
+What is Your Name?Fawad
+>>> Fawad
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Fawad' is not defined
+>>> name=input("What is Your Name?")
+What is Your Name?
+>>> name=input("What is Your Name?")
+What is Your Name?Fawad
+>>> city = raw_input("What city do you live in? ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'raw_input' is not defined
+>>> city = input("What city do you live in? ")
+What city do you live in? Multan
+>>> state = input("What state is that in? ")
+What state is that in? Pakistan
+>>> print "Hellow there! It is so great to meet you,"
+  File "<stdin>", line 1
+    print "Hellow there! It is so great to meet you,"
+                                                    ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hellow there! It is so great to meet you,")?
+>>> print( "Hellow there! It is so great to meet you,")
+Hellow there! It is so great to meet you,
+>>> print (name=Fawad)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Fawad' is not defined
+>>> print(name)
+Fawad
+>>> print("From")
+From
+>>> print(From)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'From' is not defined
+>>> print(City)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'City' is not defined
+>>> print(city)
+Multan
+>>> print(state)
+Pakistan
+>>> print name,city,state
+  File "<stdin>", line 1
+    print name,city,state
+             ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(name,city,state)?
+>>> print (name,city,state)
+Fawad Multan Pakistan
+>>> age = input("Pardon my rudeness, but how old are you? ")
+Pardon my rudeness, but how old are you?
+>>> print( "Wow! You look like you could be", age - (0.15*age), "!!")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'float'
+>>> print( "Wow! You look like you could be",int(age - (0.15*age), "!!"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'float'
+>>> age =float(input("Pardon my rudeness, but how old are you? "))
+Pardon my rudeness, but how old are you? 21
+>>> print( "Wow! You look like you could be",int(age - (0.15*age), "!!"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object cannot be interpreted as an integer
+>>> print( "Wow! You look like you could be",(age - (0.15*age), "!!"))
+Wow! You look like you could be (17.85, '!!')
+>>> print( "Wow! You look like you could be",str((age - (0.15*age), "!!"))
+... 17
+  File "<stdin>", line 2
+    17
+     ^
+SyntaxError: invalid syntax
+>>> print( "Wow! You look like you could be",srt(age - (0.15*age), "!!"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'srt' is not defined
+>>> print( "Wow! You look like you could be",float(age - (0.15*age), "!!"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: float() takes at most 1 argument (2 given)
+>>> print( "Wow! You look like you could be",float(age - (0.15*age), "!!"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: float() takes at most 1 argument (2 given)
+>>> age =int(input("What is your age"))
+What is your age21
+>>> year = (2017-age)+100
+>>> print ("At this year" year "You will become 100 year old")
+  File "<stdin>", line 1
+    print ("At this year" year "You will become 100 year old")
+                             ^
+SyntaxError: invalid syntax
+>>> print ("At this year" year "You will become 100 year old")
+  File "<stdin>", line 1
+    print ("At this year" year "You will become 100 year old")
+                             ^
+SyntaxError: invalid syntax
+>>> print ("At this year", year, "You will become 100 year old")
+At this year 2096 You will become 100 year old
+>>>
