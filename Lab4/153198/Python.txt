@@ -1,0 +1,149 @@
+>>> x=1
+>>> type(x)
+<class 'int'>
+>>> x=1.0
+>>> type(x)
+<class 'float'>
+>>> b1=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> b1=True
+>>> b2=False
+>>> type(b1)
+<class 'bool'>
+>>> x=1.0-1.0j
+>>> type(x)
+<class 'complex'>
+>>> print (x)
+(1-1j)
+>>> print (x.real,x.imag)
+1.0 -1.0
+>>> import types
+>>> print(dir(types))
+['AsyncGeneratorType', 'BuiltinFunctionType', 'BuiltinMethodType', 'CodeType', 'CoroutineType', 'DynamicClassAttribute', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'LambdaType', 'MappingProxyType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'SimpleNamespace', 'TracebackType', '_GeneratorWrapper', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_ag', '_calculate_meta', '_collections_abc', '_functools', 'coroutine', 'new_class', 'prepare_class']
+>>> x=1.0
+>>> type(x) is float
+True
+>>> type(x) is int
+False
+>>> isinstance(x,float)
+True
+>>> x=1.5
+>>> print(x,type(x))
+1.5 <class 'float'>
+>>> x=int(x)
+>>> print(x,type(x))
+1 <class 'int'>
+>>> z=complex(x)
+>>> print(z,type(z))
+(1+0j) <class 'complex'>
+>>> z=float(z)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't convert complex to float
+>>> x=float(z)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't convert complex to float
+>>> y=bool(z.real)
+>>> print(z.ral,"->",y,type(y))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'ral'
+>>> print(z.real,"->",y,type(y))
+1.0 -> True <class 'bool'>
+>>> y=bool(z.image)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'image'
+>>> y=bool(z.imag)
+>>> print(z.imag)
+0.0
+>>> print (z.image,"->",y,type(y))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'complex' object has no attribute 'image'
+>>> print (z.imag,"->",y,type(y)))
+  File "<stdin>", line 1
+    print (z.imag,"->",y,type(y)))
+                                 ^
+SyntaxError: invalid syntax
+>>> print (z.imag,"->",y,type(y))
+0.0 -> False <class 'bool'>
+>>> 1+2,1-2,1*2,1/2
+(3, -1, 2, 0.5)
+>>> 1.0+2.0,1.0-2.0,1.0*2.0,1.0/2.0
+(3.0, -1.0, 2.0, 0.5)
+>>> 3.0//2.0
+1.0
+>>> 3.0//2.0
+1.0
+>>> 2**2
+4
+>>> True and False
+False
+>>> not False
+True
+>>> True
+True
+>>> True or False
+True
+>>> 2>1,2<1
+(True, False)
+>>> 2>2,2<2
+(False, False)
+>>> 2>=2,2<=2
+(True, True)
+>>> [1,2]==[1,2]
+True
+>>> |1=|2=[1,2]
+  File "<stdin>", line 1
+    |1=|2=[1,2]
+    ^
+SyntaxError: invalid syntax
+>>> !1=!2=[1,2]
+  File "<stdin>", line 1
+    !1=!2=[1,2]
+    ^
+x= input("Enter your name:" )
+y= int(input("Enter your age:"))
+
+if y>0:
+    z=(2017-y)+100
+    print ("You will be living in after 100 years" )
+    print (z)  
+
+elif y<0:
+    print("First you have to born yourself")
+
+#Input Examples
+
+name=input("What is your name?")
+city=input("What city do you live?")
+state=input("What state is that in?")
+
+print ("Hello there! it is so great to meet you")
+print (name)
+print ("from")
+print (city)
+print (state)
+
+age=input("Pardon my rudness, but how old are you ?")
+print (age) 
+
+      
+#Traffic light
+
+light_color= input("What color is the traffic light?")
+light_color= light_color.lower()
+print (light_color)
+if light_color=="red":
+    print("You should stop")
+elif light_color=="Yellow":
+    print("slow donw")
+elif light_color=="Green":
+    print("Go Ahead!")
+else:
+    print ("What country are you in??")
+          
