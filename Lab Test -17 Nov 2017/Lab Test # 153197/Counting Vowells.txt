@@ -1,0 +1,7 @@
+string=raw_input("Enter String ...")
+vowels=0
+for i in string:
+    if(i=='a' or i=='i' or i=='o' or i=='u' or i=='A' or i=='I' or i=='O' or i=='U' ):
+        vowels = vowels+1
+print("Number of Vowels in yor string are")
+print(vowels-1)

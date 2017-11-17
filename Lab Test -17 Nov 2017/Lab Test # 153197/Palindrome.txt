@@ -1,0 +1,9 @@
+string=raw_input("Enter value ...")
+str1=list(string)
+rev=reversed(string)
+str2=list(rev)
+
+if str1==str2:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
