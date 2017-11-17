@@ -1,0 +1,39 @@
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> def remove_duplicates():
+	t = ['a', 'b', 'c', 'd']
+	t2 = ['a', 'f', 'c', 'g']
+
+	
+>>> for t in t2:
+	t.appened(t.remove())
+	return t
+SyntaxError: 'return' outside function
+>>> return t
+SyntaxError: 'return' outside function
+>>> 
+
+prime number
+Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> count = 0
+>>> while(count <= 38)
+SyntaxError: invalid syntax
+>>> while(count <= 38))
+SyntaxError: invalid syntax
+>>> while(count <= 38):
+	for i in range(2,38):
+		if i<j:
+			print("the number",i "is prime")
+			
+SyntaxError: invalid syntax
+>>> print("the number",i "is prime")
+SyntaxError: invalid syntax
+>>> 	
+KeyboardInterrupt
+>>> print("the number",i "is prime")
+SyntaxError: invalid syntax
+>>> 
+
+b = "aaa"
+b(type)
