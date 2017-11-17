@@ -1,0 +1,14 @@
+#taking input
+input=input("enter a number or string.")
+
+#avoiding the case factor
+input=input.casefold()
+
+#storing revesed string
+rev_input=reversed(input)
+
+#checking tje condition
+if(list(input)==list(rev_input)):
+    print("it is pallindrome")
+else:
+    print("it is not pallindrome")

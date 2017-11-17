@@ -1,0 +1,12 @@
+#taking input
+input=int(input("Enter a number:"))
+#setting the variable
+i=0
+k=input
+while k>0:
+    number=k%10
+    i+=number**3
+if(input==i):
+    print("number is armstrong")
+else:
+    print("number is not armstrong")
