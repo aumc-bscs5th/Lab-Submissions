@@ -1,12 +1,16 @@
-from random import randint
-a=randint(0, 9)
-
-print('lets play a game  i have a number in a variable gess it or u die \n\n')
-
-i = input('\t\tgess the number\t\t')
-
-if (i==a):
-  print('you win ur life')
-  
-else:
-  print('u will die\n\n the number was',a)
+import random
+num = random.randint(1 ,50)
+guessNum = input("Enter your guss number: ")
+flag = True
+while flag:
+    if (guessNum == num):
+        flag = False
+        print('Wow! you have guess right number!')
+    elif(guessNum > num):
+        print('Hint: You have guess number is greater than actual number.')
+        guessNum = input("Guess again! Number a number: ")
+    elif(guessNum < num):
+        print('Hint: You have guess number is less than actual number.')
+        guessNum = input("Guess again! Number a number: ")
+    else:
+        continue
